@@ -1,5 +1,10 @@
 # terraform-localstac
 
+## 事前準備
+
+- できたらでいいです
+- windowsはわかりません、ごめんね
+
 ### localstackのインストール
 ```
 # see also: https://github.com/localstack/localstack
