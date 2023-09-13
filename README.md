@@ -1,8 +1,9 @@
 # terraform-localstac
 
-### localstackの起動
+### localstackのインストール
 ```
 # see also: https://github.com/localstack/localstack
+# 好きなのでどうぞ
 # dockerで起動したい場合は↓
 $ docker compose up -d
 ```
