@@ -36,6 +36,12 @@ $ awslocal s3 ls
 2023-09-13 19:50:26 hoge
 ```
 
+### tflocal
+```
+# see also: https://github.com/localstack/terraform-local
+# 好きなのでどうぞ
+```
+
 
 ## やってみる
 
@@ -77,3 +83,17 @@ If you ever set or change modules or backend configuration for Terraform,
 rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 ```
+
+
+## 本当にlocalstackを使ってるか確認してみる
+
+いろいろやり方はありますが、ログを見るのがわかりやすいです。
+
+```
+$ TF_LOG=DEBUG terraform plan 2> log
+$ TF_LOG=DEBUG tflocal plan > log
+```
+
+のようにしてデバッグログを見てみましょう。
+ 
+ 
