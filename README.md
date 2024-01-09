@@ -1,4 +1,4 @@
-# terraform-localstac
+# terraform-localstack
 
 ## 事前準備
 
