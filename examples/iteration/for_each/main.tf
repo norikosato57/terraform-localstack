@@ -1,5 +1,7 @@
 provider "aws" {
-  region = "ap-northeast-1"
+  access_key = "test"
+  secret_key = "test"
+  region     = "ap-northeast-1"
 }
 
 resource "aws_sns_topic" "foreach_example1" {

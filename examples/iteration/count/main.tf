@@ -1,6 +1,9 @@
 provider "aws" {
-  region = "ap-northeast-1"
+  access_key = "test"
+  secret_key = "test"
+  region     = "ap-northeast-1"
 }
+
 
 resource "aws_sns_topic" "count_example1" {
   name = "count-example"
