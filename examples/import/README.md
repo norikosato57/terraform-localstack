@@ -62,3 +62,25 @@ $ awslocal s3api get-bucket-versioning --bucket terraform-backend
     "Status": "Enabled"
 }
 ```
+
+
+## dynamodb も import してみましょ
+
+```
+$ tflocal import aws_dynamodb_table.lock terraform-lock
+aws_dynamodb_table.lock: Importing from ID "terraform-lock"...
+aws_dynamodb_table.lock: Import prepared!
+  Prepared aws_dynamodb_table for import
+aws_dynamodb_table.lock: Refreshing state... [id=terraform-lock]
+
+Import successful!
+
+The resources that were imported are shown above. These resources are now in
+your Terraform state and will henceforth be managed by Terraform.
+```
+
+## 確認
+
+```
+$ tflocal state show aws_dynamodb_table.lock
+```
