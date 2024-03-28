@@ -9,7 +9,7 @@ make_bucket: terraform-backend
 
 ```
 $ awslocal dynamodb create-table \
-  	 --resion ap-northeast-1
+  	 --region ap-northeast-1 \
          --table-name terraform-lock \
          --attribute-definitions AttributeName=LockID,AttributeType=S \
          --key-schema AttributeName=LockID,KeyType=HASH \
