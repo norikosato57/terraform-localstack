@@ -16,6 +16,7 @@ variable "egress_cider_blocks" {
 }
 
 variable "egress_ipv6_cidr_blocks" {
+  type = list(string)
 }
 
 variable "tags" {
