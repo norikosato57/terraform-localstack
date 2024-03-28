@@ -2,7 +2,7 @@
 
 # https://developer.hashicorp.com/terraform/language/import
 
-
+# v1.5.0くらいから
 import {
   to = aws_vpc.default
   id = "vpc-b936dedd"
